@@ -1,5 +1,5 @@
 import './Hero.css';
-import '../images/main_hero.svg';
+import { ReactComponent as HeroImage } from '../images/main_hero.svg';
 
 function Hero() {
   return (
@@ -13,7 +13,9 @@ function Hero() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <div className="hero-content-right"></div>
+        <div className="hero-content-right">
+          <HeroImage width="97%" height="97%" />
+        </div>
       </div>
     </section>
   );

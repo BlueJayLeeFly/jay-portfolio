@@ -1,11 +1,13 @@
 import './Navbar.css';
-import '../images/Jay_logo.svg';
+import { ReactComponent as Logo } from '../images/Jay_logo.svg';
 
 function Navbar() {
   return (
     <div>
       <nav>
-        <div id="logo"></div>
+        <div id="logo">
+          <Logo width="80" height="80" />
+        </div>
 
         <ul id="menu">
           <li>HOME</li>
