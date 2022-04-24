@@ -1,0 +1,58 @@
+nav {
+  display: flex;
+  margin-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: sticky;
+  top: 0px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+#logo {
+  flex: 2;
+  background: url(../images/Jay_logo.svg) no-repeat;
+}
+
+/* menu > li */
+#menu {
+  flex: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+
+/* member-area > li */
+#member-area {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+#menu li,
+#member-area li {
+  /* Using width is right???? */
+  flex-basis: 120px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  outline: 0px solid rgba(255, 255, 255, 0);
+  color: white;
+  transition: outline 0.7s;
+}
+
+#menu li:hover,
+#member-area li:hover {
+  background-color: transparent;
+  /* Border size is added to the section */
+  /* use outline instead of border*/
+  outline: 1px solid rgba(255, 255, 255, 1);
+  color: white;
+  font-weight: 600;
+}

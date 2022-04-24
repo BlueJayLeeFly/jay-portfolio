@@ -1,0 +1,41 @@
+.hero {
+  background-color: blueviolet;
+  margin-top: -66px;
+  height: 100vh;
+}
+
+.hero h1,
+h2,
+p {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.hero-content-container {
+  padding: 250px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-content-left {
+  flex-basis: 40%;
+  padding: 30px;
+  background: rgba(15, 14, 71, 0.3);
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
+}
+
+.hero-content-right {
+  height: 500px;
+  flex-basis: 60%;
+  background: url(../images/main_hero.svg) no-repeat center center
+    rgba(15, 14, 71, 0.3);
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
+}
