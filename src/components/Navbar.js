@@ -1,3 +1,4 @@
+import React from 'react';
 import './Navbar.css';
 import { ReactComponent as Logo } from '../images/Jay_logo.svg';
 
