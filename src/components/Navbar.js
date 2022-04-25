@@ -12,9 +12,9 @@ function Navbar() {
 
         <ul id="menu">
           <li>HOME</li>
-          <li>ABOUT</li>
+          <li>WHOAMI</li>
           <li>SHOWCASES</li>
-          <li>BLOG</li>
+          <li>ROADMAP</li>
           <li>CONTACT</li>
         </ul>
 
