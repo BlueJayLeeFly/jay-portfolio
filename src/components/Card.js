@@ -1,4 +1,3 @@
-import React from 'react';
 import './Card.css';
 import { ReactComponent as Test } from '../images/main_hero.svg';
 

@@ -1,10 +1,9 @@
-import React from 'react';
 import './Navbar.css';
 import { ReactComponent as Logo } from '../images/Jay_logo.svg';
 
 function Navbar() {
   return (
-    <div>
+    <>
       <nav>
         <div id="logo">
           <Logo width="80" height="80" />
@@ -23,7 +22,7 @@ function Navbar() {
           <li>SIGN UP</li>
         </ul>
       </nav>
-    </div>
+    </>
   );
 }
 

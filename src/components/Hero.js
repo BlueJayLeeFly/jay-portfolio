@@ -1,4 +1,3 @@
-import React from 'react';
 import './Hero.css';
 import { ReactComponent as HeroImage } from '../images/main_hero.svg';
 
