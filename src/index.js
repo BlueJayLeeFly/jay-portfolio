@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Card from './components/Card';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <>
+      <Navbar />
+      <Hero />
+      <h2>Build With React</h2>
+      <Card />
+    </>
   </React.StrictMode>
 );
 
