@@ -1,15 +1,15 @@
-import './Navbar.css';
+import styles from './Navbar.module.css';
 import { ReactComponent as Logo } from '../assets/Jay_logo.svg';
 
 function Navbar() {
   return (
     <>
       <nav>
-        <div id="logo">
+        <div className={styles.logo}>
           <Logo width="80" height="80" />
         </div>
 
-        <ul id="menu">
+        <ul className={styles.menu}>
           <li>HOME</li>
           <li>WHOAMI</li>
           <li>SHOWCASES</li>
@@ -17,7 +17,7 @@ function Navbar() {
           <li>CONTACT</li>
         </ul>
 
-        <ul id="member-area">
+        <ul className={styles['member-area']}>
           <li>SIGN IN</li>
           <li>SIGN UP</li>
         </ul>

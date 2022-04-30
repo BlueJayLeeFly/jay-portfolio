@@ -11,16 +11,13 @@ nav ul {
   list-style: none;
 }
 
-#logo {
+.logo {
   flex: 2;
-}
-
-#site-logo {
   cursor: pointer;
 }
 
 /* menu > li */
-#menu {
+.menu {
   flex: 6;
   display: flex;
   justify-content: center;
@@ -30,7 +27,7 @@ nav ul {
 }
 
 /* member-area > li */
-#member-area {
+.member-area {
   flex: 2;
   display: flex;
   justify-content: flex-end;
@@ -39,8 +36,8 @@ nav ul {
   gap: 30px;
 }
 
-#menu li,
-#member-area li {
+.menu li,
+.member-area li {
   /* Using width is right???? */
   flex-basis: 120px;
   padding-top: 15px;
@@ -51,8 +48,8 @@ nav ul {
   cursor: pointer;
 }
 
-#menu li:hover,
-#member-area li:hover {
+.menu li:hover,
+.member-area li:hover {
   background-color: rgba(255, 255, 255, 0.2);
   outline: 1px solid rgba(255, 255, 255, 1);
   color: white;
