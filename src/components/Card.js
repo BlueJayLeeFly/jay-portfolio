@@ -1,5 +1,5 @@
 import './Card.css';
-import { ReactComponent as Test } from '../images/main_hero.svg';
+import { ReactComponent as Test } from '../assets/main_hero.svg';
 
 function Card() {
   return (
