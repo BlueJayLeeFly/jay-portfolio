@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import { ReactComponent as Logo } from '../assets/Jay_logo.svg';
 
@@ -10,8 +11,12 @@ function Navbar() {
         </div>
 
         <ul className={styles.menu}>
-          <li>HOME</li>
-          <li>WHOAMI</li>
+          <li>
+            <Link to="/">HOME</Link>
+          </li>
+          <li>
+            <Link to="/whoami">WHOAMI</Link>
+          </li>
           <li>SHOWCASES</li>
           <li>ROADMAP</li>
           <li>CONTACT</li>
