@@ -1,16 +1,18 @@
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
-import Card from './components/Card';
+import Home from './pages/Home';
+import WhoAmI from './pages/WhoAmI';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <h2>Build With React</h2>
-      <Card />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="whoami" element={<WhoAmI />} />
+        {/* Redirect */}
+        <Route path="/redirect" element={<Navigate to="/" />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
