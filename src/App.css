@@ -25,3 +25,27 @@
   width: 40%;
   height: 40%;
 }
+
+.gradient-one {
+  background: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+}
+
+.gradient-two {
+  background: linear-gradient(180deg, #fc00ff 0%, #00dbde 100%);
+}
+
+.gradient-three {
+  background: linear-gradient(180deg, #004ff9 0%, #fff94c 100%);
+}
+
+.gradient-four {
+  background: linear-gradient(180deg, #ffc26c 0%, #a83279 100%);
+}
+
+.gradient-five {
+  background: linear-gradient(180deg, #ff0084 0%, #833ab4 100%);
+}
+
+.gradient-six {
+  background: linear-gradient(180deg, #feac5e 0%, #4bc0c8 100%);
+}

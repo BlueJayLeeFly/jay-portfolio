@@ -1,6 +1,6 @@
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
-import Card from '../components/Card';
+import CardHolder from '../components/CardHolder';
 import Tagline from '../components/Tagline';
 
 import { ReactComponent as WebBrowserSvg } from '../assets/browser.svg';
@@ -15,7 +15,7 @@ export default function Home() {
         Title={'Build With React'}
         Subtitle={'Of React, For React, By React'}
         Content={
-          'This website is built with React. All of sub apps in this website are also created with React. You can check out my commit history on Github.'
+          'This website is built with React. All of sub apps in this website are also created with React. Check out my commit history on Github for progress.'
         }
       />
       <WebBrowserSvg className="browser-svg" />
@@ -27,7 +27,14 @@ export default function Home() {
         }
       />
       <ShortcutSvg className="shortcut-svg" />
-      <Card />
+      <CardHolder />
+      <Tagline
+        Title={'End With React'}
+        Subtitle={'Ready to Hire Me?'}
+        Content={
+          'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta'
+        }
+      />
     </>
   );
 }
