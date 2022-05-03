@@ -1,88 +1,87 @@
-import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
+import FooterCard from './FooterCard';
+
+// Icons
 import { ReactComponent as Logo } from '../assets/Jay_logo.svg';
-import { ReactComponent as Github } from '../assets/logo-github.svg';
-import { ReactComponent as LinkedIn } from '../assets/logo-linkedin.svg';
-import { ReactComponent as UrlSvg } from '../assets/url.svg';
-import { ReactComponent as AvatarSvg } from '../assets/hair-man.svg';
-import { ReactComponent as ShowCaseSvg } from '../assets/exhibition.svg';
-import { ReactComponent as RoadSvg } from '../assets/road-2.svg';
-import { ReactComponent as SignInSvg } from '../assets/password.svg';
+import HairMan from '../assets/hair-man';
+import Github from '../assets/logo-github';
+import LinkedIn from '../assets/logo-linkedin';
+import RoadSvg from '../assets/road-2';
+import ShowCaseSvg from '../assets/exhibition';
+import SignInSvg from '../assets/password';
 
 export default function Footer() {
   return (
     <section className={styles['footer-container']}>
       <hr />
       <div className={styles['footer-content']}>
-        <Logo width="100" height="100" />
-        <Link
-          className={`${styles['link-container']} ${styles['background-1']}`}
-          to="/"
-        >
-          <AvatarSvg className={styles['first-icon']} width="32" height="32" />
-          <UrlSvg className={styles['second-icon']} width="32" height="32" />
-          <h4 className={styles.title}>Who Am I?</h4>
-          <p className={styles.text}>I'll introduce myself</p>
-        </Link>
-        <Link
-          className={`${styles['link-container']} ${styles['background-2']}`}
-          to="/"
-        >
-          <ShowCaseSvg
-            className={styles['first-icon']}
-            width="32"
-            height="32"
+        <div>
+          <Logo width="100" height="100" />
+        </div>
+        <div>
+          <FooterCard
+            LinkTo={'/'}
+            Icon={<HairMan />}
+            Title={'Who Am I?'}
+            Text={'I will introduce myself'}
+            BackgroundColor={'background-1'}
           />
-          <UrlSvg className={styles['second-icon']} width="32" height="32" />
-          <h4 className={styles.title}>Showcases</h4>
-          <p className={styles.text}>Somethings to Show</p>
-        </Link>
-        <Link
-          className={`${styles['link-container']} ${styles['background-3']}`}
-          to="/"
-        >
-          <RoadSvg className={styles['first-icon']} width="32" height="32" />
-          <UrlSvg className={styles['second-icon']} width="32" height="32" />
-          <h4 className={styles.title}>Roadmap</h4>
-          <p className={styles.text}>Check My Future Plan</p>
-        </Link>
+        </div>
+        <div>
+          <FooterCard
+            LinkTo={'/'}
+            Icon={<ShowCaseSvg />}
+            Title={'Showcases'}
+            Text={'Somethings to Show'}
+            BackgroundColor={'background-2'}
+          />
+        </div>
+        <div>
+          <FooterCard
+            LinkTo={'/'}
+            Icon={<RoadSvg />}
+            Title={'Roadmap'}
+            Text={'Check My Future Plan'}
+            BackgroundColor={'background-3'}
+          />
+        </div>
         <div>
           <p>905-321-4462</p>
           <p>lsj2767@hotmail.com</p>
           <a href="https://github.com/BlueJayLeeFly" target="_blank">
-            <Github width="32" height="32" />
+            <Github />
           </a>
           <a href="https://www.linkedin.com/in/jaylee0311/" target="_blank">
-            <LinkedIn width="32" height="32" />
+            <LinkedIn />
           </a>
         </div>
-        <Link
-          className={`${styles['link-container']} ${styles['background-4']}`}
-          to="/"
-        >
-          <Github className={styles['first-icon']} width="32" height="32" />
-          <UrlSvg className={styles['second-icon']} width="32" height="32" />
-          <h4 className={styles.title}>Github</h4>
-          <p className={styles.text}>Where All of History Go</p>
-        </Link>
-        <Link
-          className={`${styles['link-container']} ${styles['background-5']}`}
-          to="/"
-        >
-          <LinkedIn className={styles['first-icon']} width="32" height="32" />
-          <UrlSvg className={styles['second-icon']} width="32" height="32" />
-          <h4 className={styles.title}>LinkedIn</h4>
-          <p className={styles.text}>Check Out My LinkedIn</p>
-        </Link>
-        <Link
-          className={`${styles['link-container']} ${styles['background-6']}`}
-          to="/"
-        >
-          <SignInSvg className={styles['first-icon']} width="32" height="32" />
-          <UrlSvg className={styles['second-icon']} width="32" height="32" />
-          <h4 className={styles.title}>Sign In</h4>
-          <p className={styles.text}>Sign In for a Test Run</p>
-        </Link>
+        <div>
+          <FooterCard
+            LinkTo={'/'}
+            Icon={<Github />}
+            Title={'Github'}
+            Text={'Where All of History Go'}
+            BackgroundColor={'background-4'}
+          />
+        </div>
+        <div>
+          <FooterCard
+            LinkTo={'/'}
+            Icon={<LinkedIn />}
+            Title={'LinkedIn'}
+            Text={'Check Out My LinkedIn'}
+            BackgroundColor={'background-5'}
+          />
+        </div>
+        <div>
+          <FooterCard
+            LinkTo={'/'}
+            Icon={<SignInSvg />}
+            Title={'Sign In'}
+            Text={'Sign In for a Test Run'}
+            BackgroundColor={'background-6'}
+          />
+        </div>
       </div>
       <div className={styles['footer-bottom']}>
         <div>[ Created by Jay Lee ]</div>

@@ -1,0 +1,47 @@
+.link-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  width: 210px;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.second-icon {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.title {
+  grid-column: 1 / 4;
+  grid-row: 2/3;
+}
+
+.text {
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+
+.background-1 {
+  background-color: #f25e5e;
+}
+
+.background-2 {
+  background-color: #f29422;
+}
+
+.background-3 {
+  background-color: #0072f5;
+}
+
+.background-4 {
+  background-color: #eb00e3;
+}
+
+.background-5 {
+  background-color: #00ccf0;
+}
+
+.background-6 {
+  background-color: #5b00db;
+}
