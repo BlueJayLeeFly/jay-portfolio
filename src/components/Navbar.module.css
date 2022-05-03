@@ -1,67 +1,39 @@
 nav {
   display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-nav ul {
-  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 .logo {
-  flex: 2;
   cursor: pointer;
 }
 
-/* menu > li */
 .menu {
-  flex: 6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(114, 9, 183, 0.9);
+  width: 100%;
+  height: 100%;
 }
 
-/* member-area > li */
-.member-area {
-  flex: 2;
+.menu-top {
   display: flex;
   justify-content: flex-end;
+  margin-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.menu-content {
+  margin: 3%;
+  padding: 3%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
   align-items: center;
-  text-align: center;
-  gap: 30px;
-}
-
-.menu li,
-.member-area li {
-  /* Using width is right???? */
-  flex-basis: 120px;
-  outline: 0px solid rgba(255, 255, 255, 0);
-  color: white;
-  transition: 0.7s;
-  cursor: pointer;
-}
-
-.menu li:hover,
-.member-area li:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  outline: 1px solid rgba(255, 255, 255, 1);
-  color: white;
-  font-weight: 500;
-  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(40px);
-  border-radius: 10px;
-}
-
-a {
-  display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-weight: 400;
-  color: white;
-}
-
-a:hover {
-  font-weight: 500;
+  gap: 10px;
 }

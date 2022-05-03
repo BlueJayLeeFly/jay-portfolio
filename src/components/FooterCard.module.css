@@ -7,6 +7,12 @@
   border-radius: 10px;
 }
 
+h4,
+p {
+  color: white;
+  text-align: center;
+}
+
 .second-icon {
   grid-column: 3/4;
   grid-row: 1/2;

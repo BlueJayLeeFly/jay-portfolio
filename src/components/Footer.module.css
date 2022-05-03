@@ -29,18 +29,17 @@ p {
 
 .footer-content,
 .footer-bottom {
-  padding-left: 8em;
-  padding-right: 8em;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .footer-content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
   justify-items: center;
   align-items: center;
-  gap: 3em;
+  gap: 10px;
   min-height: 27em;
 }
 

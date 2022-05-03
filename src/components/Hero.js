@@ -13,7 +13,7 @@ function Hero() {
         </p>
       </div>
       <div className={styles['hero-content-right']}>
-        <HeroImage width="97%" height="97%" />
+        <HeroImage />
       </div>
     </section>
   );
