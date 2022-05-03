@@ -7,12 +7,20 @@ import Footer from '../components/Footer';
 import { ReactComponent as WebBrowserSvg } from '../assets/browser.svg';
 import { ReactComponent as ShortcutSvg } from '../assets/shortcut.svg';
 import { ReactComponent as RoadmapSvg } from '../assets/roadmap.svg';
+import { ReactComponent as HeroImage } from '../assets/main_hero.svg';
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Hero
+        Title={'Jay Lee'}
+        SubTitle={'(Food Developer, Event) =&gt; React Developer'}
+        Text={
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        }
+        Image={<HeroImage />}
+      />
       <Tagline
         Title={'Build With React'}
         Subtitle={'Of React, For React, By React'}

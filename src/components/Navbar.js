@@ -4,10 +4,9 @@ import styles from './Navbar.module.css';
 import { ReactComponent as Logo } from '../assets/Jay_logo.svg';
 import MenuIcon from '../assets/menu-icon';
 
-import FooterCard from './FooterCard';
-import { ReactComponent as HeroImage } from '../assets/main_hero.svg';
 import Close from '../assets/close';
-import HairMan from '../assets/hair-man';
+import Github from '../assets/logo-github';
+import LinkedIn from '../assets/logo-linkedin';
 
 function Navbar() {
   const [openNav, setOpenNav] = useState(false);
@@ -37,34 +36,19 @@ function Navbar() {
           </div>
 
           <div className={styles['menu-content']}>
-            <FooterCard
-              LinkTo={'/'}
-              Icon={<HairMan />}
-              Title={'Who Am I?'}
-              Text={'I will introduce myself'}
-              BackgroundColor={'background-1'}
-            />
-            <FooterCard
-              LinkTo={'/'}
-              Icon={<HairMan />}
-              Title={'Who Am I?'}
-              Text={'I will introduce myself'}
-              BackgroundColor={'background-1'}
-            />
-            <FooterCard
-              LinkTo={'/'}
-              Icon={<HairMan />}
-              Title={'Who Am I?'}
-              Text={'I will introduce myself'}
-              BackgroundColor={'background-1'}
-            />
-            <FooterCard
-              LinkTo={'/'}
-              Icon={<HairMan />}
-              Title={'Who Am I?'}
-              Text={'I will introduce myself'}
-              BackgroundColor={'background-1'}
-            />
+            <Link to={'/'}> Home </Link>
+            <Link to={'/'}> Who Am I? </Link>
+            <Link to={'/'}> Showcases </Link>
+            <Link to={'/'}> Roadmap </Link>
+            <Link to={'/'}> Contact </Link>
+            <button>Sign In</button>
+            <button>Sign Up</button>
+
+            <div className={styles.logos}>
+              <Link to={'/'}>
+                <Github />
+              </Link>
+            </div>
           </div>
         </section>
       )}
