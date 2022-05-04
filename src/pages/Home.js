@@ -15,7 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero
         Title={'Jay Lee'}
-        SubTitle={'(Food Developer, Event) =&gt; React Developer'}
+        SubTitle={'(Food Developer, Event) => React Developer'}
         Text={
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         }

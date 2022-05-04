@@ -2,6 +2,11 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import WhoAmI from './pages/WhoAmI';
+import Showcases from './pages/Showcases';
+import Roadmap from './pages/Roadmap';
+import Contact from './pages/Contact';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
 
 function App() {
   return (
@@ -9,6 +14,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="whoami" element={<WhoAmI />} />
+        <Route path="showcases" element={<Showcases />} />
+        <Route path="roadmap" element={<Roadmap />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="signin" element={<SignIn />} />
+        <Route path="signup" element={<SignUp />} />
         {/* Redirect */}
         <Route path="/redirect" element={<Navigate to="/" />} />
       </Routes>

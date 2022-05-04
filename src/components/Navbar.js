@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import { ReactComponent as Logo } from '../assets/Jay_logo.svg';
 import MenuIcon from '../assets/menu-icon';
@@ -10,10 +10,10 @@ import LinkedIn from '../assets/logo-linkedin';
 
 function Navbar() {
   const [openNav, setOpenNav] = useState(false);
+  let navigate = useNavigate();
 
   function handleIconClick() {
     setOpenNav(!openNav);
-    console.log(openNav);
   }
 
   return (
@@ -37,12 +37,12 @@ function Navbar() {
 
           <div className={styles['menu-content']}>
             <Link to={'/'}> Home </Link>
-            <Link to={'/'}> Who Am I? </Link>
-            <Link to={'/'}> Showcases </Link>
-            <Link to={'/'}> Roadmap </Link>
-            <Link to={'/'}> Contact </Link>
-            <button>Sign In</button>
-            <button>Sign Up</button>
+            <Link to={'/whoami'}> Who Am I? </Link>
+            <Link to={'/showcases'}> Showcases </Link>
+            <Link to={'/roadmap'}> Roadmap </Link>
+            <Link to={'/contact'}> Contact </Link>
+            <button onClick={() => navigate('/signin')}>Sign In</button>
+            <button onClick={() => navigate('/signup')}>Sign Up</button>
 
             <div className={styles.logos}>
               <Link to={'/'}>
