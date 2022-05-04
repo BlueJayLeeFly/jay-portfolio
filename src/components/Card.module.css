@@ -1,4 +1,6 @@
 button {
+  margin-top: 1em;
+  text-decoration: underline;
   background-color: transparent;
   border: none;
   color: white;

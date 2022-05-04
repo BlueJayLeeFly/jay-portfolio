@@ -48,7 +48,7 @@ export default function Home() {
       <RoadmapSvg className="roadmap-svg" />
       <Tagline
         Title={'End With React'}
-        Subtitle={'Ready to Hire Me?'}
+        Subtitle={'905-321-4462 / lsj2767@hotmail.com'}
         Content={
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta'
         }

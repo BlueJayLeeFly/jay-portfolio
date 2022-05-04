@@ -6,7 +6,6 @@ import MenuIcon from '../assets/menu-icon';
 
 import Close from '../assets/close';
 import Github from '../assets/logo-github';
-import LinkedIn from '../assets/logo-linkedin';
 
 function Navbar() {
   const [openNav, setOpenNav] = useState(false);
