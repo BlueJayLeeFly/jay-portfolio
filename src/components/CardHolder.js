@@ -12,6 +12,7 @@ export default function CardHolder() {
   return (
     <div className={styles['card-container']}>
       <Card
+        LinkTo={'/whoami'}
         gradient="gradient-one"
         image={ImageOne}
         title="Who am I?"
@@ -19,6 +20,7 @@ export default function CardHolder() {
         buttonText="Learn More"
       />
       <Card
+        LinkTo={'/showcases'}
         gradient="gradient-two"
         image={ImageTwo}
         title="Showcases"
@@ -26,6 +28,7 @@ export default function CardHolder() {
         buttonText="Learn More"
       />
       <Card
+        LinkTo={'/roadmap'}
         gradient="gradient-three"
         image={ImageThree}
         title="Roadmap"
@@ -33,6 +36,7 @@ export default function CardHolder() {
         buttonText="Learn More"
       />
       <Card
+        LinkTo={'/roadmap'}
         gradient="gradient-four"
         image={ImageFour}
         title="LinkedIn"
@@ -40,6 +44,7 @@ export default function CardHolder() {
         buttonText="Learn More"
       />
       <Card
+        LinkTo={'/roadmap'}
         gradient="gradient-five"
         image={ImageFive}
         title="Github"
@@ -47,6 +52,7 @@ export default function CardHolder() {
         buttonText="Learn More"
       />
       <Card
+        LinkTo={'/contact'}
         gradient="gradient-six"
         image={ImageSix}
         title="Contact"

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import styles from './Card.module.css';
 
 function Card(props) {
@@ -6,7 +8,9 @@ function Card(props) {
       <img src={props.image} className={styles['card-vector']} />
       <h2>{props.title}</h2>
       <p>{props.text}</p>
-      <button>{props.buttonText}</button>
+      <Link className={styles.cardlink} to={props.LinkTo}>
+        {props.buttonText}
+      </Link>
     </div>
   );
 }
