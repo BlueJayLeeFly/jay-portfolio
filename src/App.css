@@ -57,3 +57,9 @@
 .gradient-six {
   background: linear-gradient(180deg, #feac5e 0%, #4bc0c8 100%);
 }
+
+/* To Do List */
+.img-center {
+  max-width: 700px;
+  margin: 1.5em auto;
+}

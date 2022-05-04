@@ -40,8 +40,18 @@ function Navbar() {
             <Link to={'/showcases'}> Showcases </Link>
             <Link to={'/roadmap'}> Roadmap </Link>
             <Link to={'/contact'}> Contact </Link>
-            <button onClick={() => navigate('/signin')}>Sign In</button>
-            <button onClick={() => navigate('/signup')}>Sign Up</button>
+            <button
+              className={styles['nav-btn']}
+              onClick={() => navigate('/signin')}
+            >
+              Sign In
+            </button>
+            <button
+              className={styles['nav-btn']}
+              onClick={() => navigate('/signup')}
+            >
+              Sign Up
+            </button>
 
             <div className={styles.logos}>
               <Link to={'/'}>

@@ -8,6 +8,8 @@ import Contact from './pages/Contact';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 
+import ToDoList from './pages/ToDoList';
+
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="whoami" element={<WhoAmI />} />
         <Route path="showcases" element={<Showcases />} />
+        <Route path="todolist" element={<ToDoList />} />
         <Route path="roadmap" element={<Roadmap />} />
         <Route path="contact" element={<Contact />} />
         <Route path="signin" element={<SignIn />} />
