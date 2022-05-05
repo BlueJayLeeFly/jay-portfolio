@@ -10,8 +10,8 @@ export default function Roadmap() {
     <>
       <Navbar />
       <Hero
-        Title={'Showcase'}
-        SubTitle={'Where React Shines'}
+        Title={'Roadmap'}
+        SubTitle={'The Plan to Go Further'}
         Text={
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         }
