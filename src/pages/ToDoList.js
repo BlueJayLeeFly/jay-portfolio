@@ -1,19 +1,12 @@
 import { useCollection } from '../hooks/useCollection';
 import Navbar from '../components/Navbar';
+import TodoListContainer from '../components/TodoListContainer';
 
 export default function ToDoList() {
-  const { documents: todos } = useCollection('todolist');
-  console.log(todos);
   return (
     <>
       <Navbar />
-      {todos && (
-        <ul>
-          {todos.map((todo) => (
-            <li key={todo.id}>{todo.title}</li>
-          ))}
-        </ul>
-      )}
+      <TodoListContainer></TodoListContainer>
     </>
   );
 }

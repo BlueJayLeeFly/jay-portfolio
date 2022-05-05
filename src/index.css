@@ -15,7 +15,7 @@ body {
     rgba(0, 212, 255, 1) 100.2%
   );
   background-size: 300% 300%;
-  animation: background-gradient 13s ease infinite;
+  animation: background-gradient 15s ease infinite;
 }
 
 @keyframes background-gradient {

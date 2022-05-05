@@ -4,9 +4,6 @@ import Tagline from '../components/Tagline';
 import Footer from '../components/Footer';
 import ButtonInline from '../components/ButtonInline';
 
-import { Outlet, Routes, Route } from 'react-router-dom';
-import ToDoList from '../pages/ToDoList';
-
 import { ReactComponent as ShowcaseImage } from '../assets/showcase_hero.svg';
 import { ReactComponent as TodoImage } from '../assets/todo.svg';
 
