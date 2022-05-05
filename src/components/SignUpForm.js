@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useSignup } from '../hooks/useSignup';
+import { Link } from 'react-router-dom';
 
 import styles from './SignUpForm.module.css';
 
@@ -35,6 +36,7 @@ export default function SignUpForm() {
       </label>
       <button>Sign Up</button>
       {error && <p>{error}</p>}
+      <Link to="/signin">Already Signed Up? Go to Sign In</Link>
     </form>
   );
 }
