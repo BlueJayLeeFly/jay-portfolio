@@ -11,11 +11,12 @@ export default function SignUp() {
       <Navbar />
       <Hero
         Title={'Sign Up'}
-        SubTitle={'Where React Shines'}
+        SubTitle={'One Pass For Everything'}
         Text={
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         }
         Image={<SignUpImage />}
+        SignUp={true}
       />
       <Tagline
         Title={'One Pass For Test Runs'}

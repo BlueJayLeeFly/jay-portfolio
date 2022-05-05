@@ -22,7 +22,7 @@ export default function Roadmap() {
 
       <Tagline
         Title={'Adaptive Layout'}
-        Subtitle={'Show Customers Items Differently'}
+        Subtitle={'Show Customers Your Items Differently'}
         Content={
           '1000s products to show to your potential customers but 20 spots available. What is your choice? Display items based on location, numbers of clicks, order histories...These are what everybody uses. Customers will come back next season if your clothing lines up are boring. Give them something different.'
         }

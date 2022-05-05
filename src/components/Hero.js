@@ -1,14 +1,17 @@
 import styles from './Hero.module.css';
+import SignUpForm from './SignUpForm';
+import SignInForm from './SignInForm';
 
-function Hero({ Title, SubTitle, Text, Image }) {
+function Hero(props) {
   return (
     <section className={styles.hero}>
       <div className={styles['hero-content-left']}>
-        <h1>{Title}</h1>
-        <h2>{SubTitle}</h2>
-        <p>{Text}</p>
+        <h1>{props.Title}</h1>
+        <h2>{props.SubTitle}</h2>
+        <p>{props.Text}</p>
+        {props.SignUp && <SignUpForm />}
       </div>
-      <div className={styles['hero-content-right']}>{Image}</div>
+      <div className={styles['hero-content-right']}>{props.Image}</div>
     </section>
   );
 }
