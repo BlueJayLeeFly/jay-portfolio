@@ -10,6 +10,7 @@ import ClearData from '../assets/clear-data';
 import { db } from '../firebase/config';
 import { collection, addDoc, doc, deleteDoc } from 'firebase/firestore';
 
+// Category props pass down and use as a collection name
 export default function TodoListContainer() {
   const { documents: todos } = useCollection('todolist');
   const [newTodo, setNewTodo] = useState('');

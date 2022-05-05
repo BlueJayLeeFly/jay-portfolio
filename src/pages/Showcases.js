@@ -20,7 +20,7 @@ export default function Showcases() {
         Image={<ShowcaseImage />}
       />
       <Tagline
-        Title={'To Do List'}
+        Title={'Simple To Do List'}
         Subtitle={'A Small Beginning'}
         Content={
           'This website is built with React. All of sub apps in this website are also created with React. Check out my commit history on Github for progress.'
