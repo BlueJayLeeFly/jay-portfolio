@@ -9,11 +9,13 @@ import ClearData from '../assets/clear-data';
 //firebase imports
 import { db } from '../firebase/config';
 import { collection, addDoc, doc, deleteDoc } from 'firebase/firestore';
+import { useAuthContext } from '../hooks/useAuthContext';
 
 // Category props pass down and use as a collection name
 export default function TodoListContainer() {
   const { documents: todos } = useCollection('todolist');
   const [newTodo, setNewTodo] = useState('');
+  const { user } = useAuthContext();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -47,7 +49,7 @@ export default function TodoListContainer() {
           </h4>
         </div>
         <div className={styles['todo-center']}>
-          <h3>Hello Jay!</h3>
+          <h3>Hello {user.displayName}!</h3>
           {todos && (
             <ul>
               {todos.map((todo) => (

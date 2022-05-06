@@ -7,7 +7,23 @@
 .signin input,
 .signin span,
 .signin p,
-.signin button {
+.signin button,
+.signout-container {
+  color: white;
+}
+
+.signout {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  padding: 0.6em 1em;
+  width: 200px;
+  display: block;
+  background: rgb(16, 219, 219);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1em;
   color: white;
 }
 
