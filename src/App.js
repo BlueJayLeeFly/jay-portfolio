@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 import Home from './pages/Home';
 import WhoAmI from './pages/WhoAmI';
@@ -18,6 +19,7 @@ function App() {
   if (authIsReady) {
     return (
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="whoami" element={<WhoAmI />} />

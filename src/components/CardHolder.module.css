@@ -1,10 +1,19 @@
 .card-container {
   display: grid;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: repeat(2, 1fr);
   justify-content: center;
   justify-items: center;
-  gap: 10px;
+  gap: 15px;
+}
+
+.card-container > div {
+  transition: width 0.3s, height 0.3s;
+}
+
+.card-container > div:hover {
+  width: 95%;
+  height: 100%;
 }

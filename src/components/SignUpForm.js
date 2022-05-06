@@ -14,7 +14,7 @@ export default function SignUpForm() {
   const { user, authIsReady } = useAuthContext();
   const { signout } = useSignout();
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
     signup(displayName, email, password);
   };

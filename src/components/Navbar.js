@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, NavLink } from 'react-router-dom';
 import { useAuthContext } from '../hooks/useAuthContext';
 import { useSignout } from '../hooks/useSignout';
 import styles from './Navbar.module.css';
@@ -18,6 +18,12 @@ function Navbar() {
   function handleIconClick() {
     setOpenNav(!openNav);
   }
+
+  let activeStyle = {
+    opacity: 1,
+    fontSize: 60,
+    textDecoration: 'underline',
+  };
 
   return (
     <>
@@ -39,12 +45,42 @@ function Navbar() {
           </div>
 
           <div className={styles['menu-content']}>
-            {user && <h2>Hello {user.displayName}</h2>}
-            <Link to={'/'}> Home </Link>
-            <Link to={'/whoami'}> Who Am I? </Link>
-            <Link to={'/showcases'}> Showcases </Link>
-            <Link to={'/roadmap'}> Roadmap </Link>
-            <Link to={'/contact'}> Contact </Link>
+            {user && (
+              <h2>
+                Hello <span>{user.displayName}</span>
+              </h2>
+            )}
+            <NavLink
+              to={'/'}
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to={'/whoami'}
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              Who Am I?
+            </NavLink>
+            <NavLink
+              to={'/showcases'}
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              Showcases
+            </NavLink>
+            <NavLink
+              to={'/roadmap'}
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              Roadmap
+            </NavLink>
+            <NavLink
+              to={'/contact'}
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              Contact
+            </NavLink>
+
             {/* Hide Sign in and up button and show Sign out button */}
             {user ? (
               <button onClick={signout} className={styles['nav-btn']}>
