@@ -130,3 +130,9 @@
 .task-form-btn:hover {
   opacity: 1;
 }
+
+@media screen and (max-width: 800px) {
+  .todo-list-container {
+    flex-direction: column;
+  }
+}

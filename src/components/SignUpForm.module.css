@@ -33,7 +33,7 @@
 }
 
 .signup input {
-  width: 300px;
+  max-width: 300px;
   padding: 0.9em 2em;
   margin-bottom: 2em;
   background: transparent;

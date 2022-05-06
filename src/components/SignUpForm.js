@@ -32,7 +32,7 @@ export default function SignUpForm() {
     return (
       <form className={styles.signup} onSubmit={handleFormSubmit}>
         <label>
-          <span>displayName</span>
+          <span>Display Name</span>
           <input
             required
             type="text"
