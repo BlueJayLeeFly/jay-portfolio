@@ -39,6 +39,7 @@ function Navbar() {
           </div>
 
           <div className={styles['menu-content']}>
+            {user && <h2>Hello {user.displayName}</h2>}
             <Link to={'/'}> Home </Link>
             <Link to={'/whoami'}> Who Am I? </Link>
             <Link to={'/showcases'}> Showcases </Link>

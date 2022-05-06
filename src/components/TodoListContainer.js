@@ -13,9 +13,13 @@ import { useAuthContext } from '../hooks/useAuthContext';
 
 // Category props pass down and use as a collection name
 export default function TodoListContainer() {
-  const { documents: todos } = useCollection('todolist');
-  const [newTodo, setNewTodo] = useState('');
   const { user } = useAuthContext();
+  const { documents: todos } = useCollection('todolist', [
+    'uid',
+    '==',
+    user.uid,
+  ]);
+  const [newTodo, setNewTodo] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,6 +28,7 @@ export default function TodoListContainer() {
 
     await addDoc(ref, {
       title: newTodo,
+      uid: user.uid,
     });
 
     setNewTodo('');
@@ -50,6 +55,7 @@ export default function TodoListContainer() {
         </div>
         <div className={styles['todo-center']}>
           <h3>Hello {user.displayName}!</h3>
+          {/* Display fetched data */}
           {todos && (
             <ul>
               {todos.map((todo) => (

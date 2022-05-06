@@ -25,7 +25,6 @@ export const useSignup = () => {
             console.log('Profile updated', displayName);
           }
         );
-
         // Email verification
         sendEmailVerification(userCredential.user).then(() => {
           console.log('Email Sent');
