@@ -7,6 +7,7 @@
 
 # Firebase
 src/firebase/config.js
+.firebase/
 
 # testing
 /coverage
@@ -29,3 +30,6 @@ yarn-error.log*
 firebase.json
 firestore.indexes.json
 firestore.rules
+.firebase/hosting.YnVpbGQ.cache
+.firebase/hosting.YnVpbGQ.cache
+.firebase/hosting.YnVpbGQ.cache

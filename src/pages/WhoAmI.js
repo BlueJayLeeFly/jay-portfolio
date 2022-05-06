@@ -13,17 +13,15 @@ export default function WhoAmI() {
       <Navbar />
       <Hero
         Title={'Who Am I?'}
-        SubTitle={'Where React Shines'}
-        Text={
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        }
+        SubTitle={'I Love to Learn React'}
+        Text={'I drink a Cup of Coffee at 10pm If I Need to Learn Something.'}
         Image={<WhoAmISvg />}
       />
       <Tagline
         Title={'Hello World!'}
         Subtitle={'My Coding Journey Started at 10 but...'}
         Content={
-          'I... actually my mom signed up after school coding program when I was 10 years old for a couple of years.'
+          'I... actually my mom signed up for after-school coding program when I was 10 years old for a couple of years.'
         }
       />
       <KidsCodingSvg className="kids-coding-svg" />

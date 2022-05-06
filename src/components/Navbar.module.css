@@ -53,7 +53,7 @@ nav {
   display: block;
   text-decoration: none;
   color: white;
-  font-size: 2.5em;
+  font-size: 2.4em;
   opacity: 0.7;
   transition: font-size 0.5s, opacity 0.5s;
 }
@@ -64,13 +64,13 @@ nav {
 }
 
 .menu-content span {
-  font-size: 2em;
+  font-size: 1.8em;
   text-decoration: underline;
 }
 
 .menu-content a:hover {
   opacity: 1;
-  font-size: 3em;
+  font-size: 2.9em;
   text-decoration: underline;
 }
 

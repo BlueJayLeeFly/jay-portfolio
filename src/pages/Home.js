@@ -21,7 +21,7 @@ export default function Home() {
         Title={'Jay Lee'}
         SubTitle={'(Food Developer, Event) => React Developer'}
         Text={
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+          'From Food Developer to React Developer...Drastic Changes to Do What I Love to Do'
         }
         Image={<HeroImage />}
       />
@@ -29,16 +29,14 @@ export default function Home() {
         Title={'Build With React'}
         Subtitle={'Of React, For React, By React'}
         Content={
-          'This website is built with React. All of sub apps in this website are also created with React. Check out my commit history on Github for progress.'
+          'This website is built with React. All of sub apps in this website are also created with React.'
         }
       />
       <WebBrowserSvg className="browser-svg" />
       <Tagline
         Title={'Shortcuts'}
-        Subtitle={'What is Jay doing?'}
-        Content={
-          'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta'
-        }
+        Subtitle={'Different Ways to Get to Know Me'}
+        Content={'Different Ways to Get to Know Me'}
       />
       <ShortcutSvg className="shortcut-svg" />
       <CardHolder />
@@ -53,9 +51,7 @@ export default function Home() {
       <Tagline
         Title={'End With React'}
         Subtitle={'How to Contact Me'}
-        Content={
-          'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta'
-        }
+        Content={'You have different options to connect with me. Your choice.'}
       />
       <ThreeColHero>
         <div>
