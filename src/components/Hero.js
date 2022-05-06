@@ -10,6 +10,7 @@ function Hero(props) {
         <h2>{props.SubTitle}</h2>
         <p>{props.Text}</p>
         {props.SignUp && <SignUpForm />}
+        {props.SignIn && <SignInForm />}
       </div>
       <div className={styles['hero-content-right']}>{props.Image}</div>
     </section>

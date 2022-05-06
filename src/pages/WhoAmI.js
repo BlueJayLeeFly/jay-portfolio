@@ -4,6 +4,8 @@ import Tagline from '../components/Tagline';
 import Footer from '../components/Footer';
 
 import { ReactComponent as WhoAmISvg } from '../assets/whoami_hero.svg';
+import { ReactComponent as KidsCodingSvg } from '../assets/kids_coding.svg';
+import { ReactComponent as BakerSvg } from '../assets/baker.svg';
 
 export default function WhoAmI() {
   return (
@@ -19,10 +21,22 @@ export default function WhoAmI() {
       />
       <Tagline
         Title={'Hello World!'}
-        Subtitle={'Of React, For React, By React'}
+        Subtitle={'My Coding Journey Started at 10 but...'}
         Content={
-          'This website is built with React. All of sub apps in this website are also created with React. Check out my commit history on Github for progress.'
+          'I... actually my mom signed up after school coding program when I was 10 years old for a couple of years.'
         }
+      />
+      <KidsCodingSvg className="kids-coding-svg" />
+      <Tagline
+        Title={'But I chose a different career path'}
+        Subtitle={'and became a food developer in a bread company.'}
+        Content={'and then worked at Hilton. Food...Food...Food'}
+      />
+      <BakerSvg className="baker-svg" />
+      <Tagline
+        Title={'Hello World Again!'}
+        Subtitle={'My Coding Journey Started Again'}
+        Content={'Write something here'}
       />
       <Footer />
     </>
