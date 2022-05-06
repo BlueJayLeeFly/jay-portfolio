@@ -10,7 +10,7 @@ export default function SignInForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const { error, signin } = useSignIn();
-  const { user, authIsReady } = useAuthContext();
+  const { user } = useAuthContext();
   const { signout } = useSignout();
 
   const handleFormSubmit = (e) => {

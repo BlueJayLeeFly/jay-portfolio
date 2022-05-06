@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Tagline from '../components/Tagline';
 import Footer from '../components/Footer';
 
-import { ReactComponent as SignUpImage } from '../assets/signup_hero.svg';
+import { ReactComponent as SignUpImage } from '../assets/svg/signup_hero.svg';
 
 export default function SignUp() {
   return (

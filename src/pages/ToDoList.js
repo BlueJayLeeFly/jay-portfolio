@@ -1,4 +1,3 @@
-import { useCollection } from '../hooks/useCollection';
 import Navbar from '../components/Navbar';
 import TodoListContainer from '../components/TodoListContainer';
 

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from './FooterCard.module.css';
 
-import Url from '../assets/url';
+import Url from '../assets/jsx-icons/url';
 
 export default function FooterCard({
   LinkTo,

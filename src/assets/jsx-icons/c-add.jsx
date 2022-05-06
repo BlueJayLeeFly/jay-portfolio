@@ -1,5 +1,5 @@
 function CAdd(props) {
-  const title = props.title || 'c add';
+  const title = props.title || 'Add Task';
 
   return (
     <svg

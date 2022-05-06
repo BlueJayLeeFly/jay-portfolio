@@ -3,15 +3,15 @@ import { Link, useNavigate, NavLink } from 'react-router-dom';
 import { useAuthContext } from '../hooks/useAuthContext';
 import { useSignout } from '../hooks/useSignout';
 import styles from './Navbar.module.css';
-import { ReactComponent as Logo } from '../assets/Jay_logo.svg';
-import MenuIcon from '../assets/menu-icon';
+import { ReactComponent as Logo } from '../assets/svg/Jay_logo.svg';
+import MenuIcon from '../assets/jsx-icons/menu-icon';
 
-import Close from '../assets/close';
-import Github from '../assets/logo-github';
+import Close from '../assets/jsx-icons/close';
+import Github from '../assets/jsx-icons/logo-github';
 
 function Navbar() {
   const [openNav, setOpenNav] = useState(false);
-  const { user, authIsReady } = useAuthContext();
+  const { user } = useAuthContext();
   const { signout } = useSignout();
   let navigate = useNavigate();
 

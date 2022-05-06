@@ -3,14 +3,14 @@ import FooterCard from './FooterCard';
 import FooterCardExtLink from './FooterCardExtLink';
 
 // Icons
-import { ReactComponent as Logo } from '../assets/Jay_logo.svg';
-import HairMan from '../assets/hair-man';
-import Github from '../assets/logo-github';
-import LinkedIn from '../assets/logo-linkedin';
-import RoadSvg from '../assets/road-2';
-import ShowCaseSvg from '../assets/exhibition';
-import SignInSvg from '../assets/password';
-import SignUp from '../assets/signup';
+import { ReactComponent as Logo } from '../assets/svg/Jay_logo.svg';
+import HairMan from '../assets/jsx-icons/hair-man';
+import Github from '../assets/jsx-icons/logo-github';
+import LinkedIn from '../assets/jsx-icons/logo-linkedin';
+import RoadSvg from '../assets/jsx-icons/road-2';
+import ShowCaseSvg from '../assets/jsx-icons/exhibition';
+import SignInSvg from '../assets/jsx-icons/password';
+import SignUp from '../assets/jsx-icons/signup';
 
 export default function Footer() {
   return (

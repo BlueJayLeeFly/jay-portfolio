@@ -5,13 +5,13 @@ import Tagline from '../components/Tagline';
 import ThreeColHero from '../components/ThreeColHero';
 import Footer from '../components/Footer';
 
-import { ReactComponent as WebBrowserSvg } from '../assets/browser.svg';
-import { ReactComponent as ShortcutSvg } from '../assets/shortcut.svg';
-import { ReactComponent as RoadmapSvg } from '../assets/roadmap.svg';
-import { ReactComponent as HeroImage } from '../assets/main_hero.svg';
-import { ReactComponent as ContactImage } from '../assets/contact_hero.svg';
-import { ReactComponent as FbMsgImage } from '../assets/fb_msg.svg';
-import { ReactComponent as WhatsappImage } from '../assets/whatsapp.svg';
+import { ReactComponent as WebBrowserSvg } from '../assets/svg/browser.svg';
+import { ReactComponent as ShortcutSvg } from '../assets/svg/shortcut.svg';
+import { ReactComponent as RoadmapSvg } from '../assets/svg/roadmap.svg';
+import { ReactComponent as HeroImage } from '../assets/svg/main_hero.svg';
+import { ReactComponent as ContactImage } from '../assets/svg/contact_hero.svg';
+import { ReactComponent as FbMsgImage } from '../assets/svg/fb_msg.svg';
+import { ReactComponent as WhatsappImage } from '../assets/svg/whatsapp.svg';
 
 export default function Home() {
   return (
@@ -67,12 +67,13 @@ export default function Home() {
           <a
             href="https://www.messenger.com/t/100054216151530/"
             target="_blank"
+            rel="noreferrer"
           >
             <FbMsgImage width="80%" />
           </a>
         </div>
         <div>
-          <a href="https://wa.me/19053582164" target="_blank">
+          <a href="https://wa.me/19053582164" target="_blank" rel="noreferrer">
             <WhatsappImage width="80%" />
           </a>
         </div>

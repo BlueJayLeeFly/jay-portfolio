@@ -1,12 +1,12 @@
 import styles from './CardHolder.module.css';
 import Card from './Card';
 
-import ImageOne from '../assets/card_1.svg';
-import ImageTwo from '../assets/card_2.svg';
-import ImageThree from '../assets/card_3.svg';
-import ImageFour from '../assets/card_4.svg';
-import ImageFive from '../assets/card_5.svg';
-import ImageSix from '../assets/card_6.svg';
+import ImageOne from '../assets/svg/card_1.svg';
+import ImageTwo from '../assets/svg/card_2.svg';
+import ImageThree from '../assets/svg/card_3.svg';
+import ImageFour from '../assets/svg/card_4.svg';
+import ImageFive from '../assets/svg/card_5.svg';
+import ImageSix from '../assets/svg/card_6.svg';
 
 export default function CardHolder() {
   return (

@@ -3,9 +3,9 @@ import Navbar from '../components/Navbar';
 import Tagline from '../components/Tagline';
 import Footer from '../components/Footer';
 
-import { ReactComponent as RoadMapImage } from '../assets/roadmap_hero.svg';
-import { ReactComponent as AdaptiveImage } from '../assets/adaptive.svg';
-import { ReactComponent as TeamTodoImage } from '../assets/team-todo.svg';
+import { ReactComponent as RoadMapImage } from '../assets/svg/roadmap_hero.svg';
+import { ReactComponent as AdaptiveImage } from '../assets/svg/adaptive.svg';
+import { ReactComponent as TeamTodoImage } from '../assets/svg/team-todo.svg';
 
 export default function Roadmap() {
   return (

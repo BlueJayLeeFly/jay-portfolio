@@ -3,9 +3,9 @@ import Navbar from '../components/Navbar';
 import Tagline from '../components/Tagline';
 import Footer from '../components/Footer';
 
-import { ReactComponent as WhoAmISvg } from '../assets/whoami_hero.svg';
-import { ReactComponent as KidsCodingSvg } from '../assets/kids_coding.svg';
-import { ReactComponent as BakerSvg } from '../assets/baker.svg';
+import { ReactComponent as WhoAmISvg } from '../assets/svg/whoami_hero.svg';
+import { ReactComponent as KidsCodingSvg } from '../assets/svg/kids_coding.svg';
+import { ReactComponent as BakerSvg } from '../assets/svg/baker.svg';
 
 export default function WhoAmI() {
   return (

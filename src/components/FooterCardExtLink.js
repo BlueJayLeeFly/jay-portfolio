@@ -2,7 +2,7 @@
 
 import styles from './FooterCardExtLink.module.css';
 
-import Url from '../assets/url';
+import Url from '../assets/jsx-icons/url';
 
 export default function FooterCard({
   LinkTo,

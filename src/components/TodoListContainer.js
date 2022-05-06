@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useCollection } from '../hooks/useCollection';
 import styles from './TodoListContainer.module.css';
-import CheckIcon from '../assets/progress-2';
-import { ReactComponent as TodoImage } from '../assets/todo.svg';
-import Cadd from '../assets/c-add';
-import ClearData from '../assets/clear-data';
+import CheckIcon from '../assets/jsx-icons/progress-2';
+import { ReactComponent as TodoImage } from '../assets/svg/todo.svg';
+import Cadd from '../assets/jsx-icons/c-add';
+import ClearData from '../assets/jsx-icons/clear-data';
 
 //firebase imports
 import { db } from '../firebase/config';

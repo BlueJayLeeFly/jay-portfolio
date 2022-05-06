@@ -4,8 +4,8 @@ import Tagline from '../components/Tagline';
 import Footer from '../components/Footer';
 import ButtonInline from '../components/ButtonInline';
 
-import { ReactComponent as ShowcaseImage } from '../assets/showcase_hero.svg';
-import { ReactComponent as TodoImage } from '../assets/todo.svg';
+import { ReactComponent as ShowcaseImage } from '../assets/svg/showcase_hero.svg';
+import { ReactComponent as TodoImage } from '../assets/svg/todo.svg';
 
 export default function Showcases() {
   return (

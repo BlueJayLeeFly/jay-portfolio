@@ -1,5 +1,5 @@
 function ClearData(props) {
-  const title = props.title || 'clear data';
+  const title = props.title || 'clear';
 
   return (
     <svg
