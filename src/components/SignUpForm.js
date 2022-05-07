@@ -62,7 +62,11 @@ export default function SignUpForm() {
         </label>
         <button>Sign Up</button>
         {error && <p>{error}</p>}
-        <Link to="/signin">Already Signed Up? Go to Sign In</Link>
+        <Link to="/signin">
+          Already Signed Up? Go to Sign In
+          <br />
+          Or Use Your Google, Facebook and Github Account.
+        </Link>
       </form>
     );
   }

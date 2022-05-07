@@ -11,9 +11,9 @@ export default function SignIn() {
       <Navbar />
       <Hero
         Title={'Sign In'}
-        SubTitle={'Where React Shines'}
+        SubTitle={'Test With Your Accounts'}
         Text={
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+          'Sign in with your Google, Facebook and Github account without signing up'
         }
         Image={<SignInImage />}
         SignIn={true}

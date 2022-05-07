@@ -7,7 +7,6 @@ import { ReactComponent as Logo } from '../assets/svg/Jay_logo.svg';
 import MenuIcon from '../assets/jsx-icons/menu-icon';
 
 import Close from '../assets/jsx-icons/close';
-import Github from '../assets/jsx-icons/logo-github';
 
 function Navbar() {
   const [openNav, setOpenNav] = useState(false);
@@ -29,13 +28,16 @@ function Navbar() {
     <>
       <nav>
         <div className={styles.logo}>
-          <Logo width="80" height="80" />
+          <Link to={'/'}>
+            <Logo width="80" height="80" />
+          </Link>
         </div>
         <button className={styles.menuicon} onClick={handleIconClick}>
           <MenuIcon />
         </button>
       </nav>
 
+      {/* Modal Nav */}
       {openNav && (
         <section className={styles.menu}>
           <div className={styles['menu-top']}>
@@ -102,12 +104,6 @@ function Navbar() {
                 </button>
               </>
             )}
-
-            <div className={styles.logos}>
-              <Link to={'/'}>
-                <Github />
-              </Link>
-            </div>
           </div>
         </section>
       )}
