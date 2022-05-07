@@ -12,9 +12,7 @@ export default function SignUp() {
       <Hero
         Title={'Sign Up'}
         SubTitle={'One Pass For Everything'}
-        Text={
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        }
+        Text={'Thank you for signing up. No Spam Guarantee'}
         Image={<SignUpImage />}
         SignUp={true}
       />

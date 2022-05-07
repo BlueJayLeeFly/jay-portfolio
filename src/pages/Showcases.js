@@ -14,9 +14,7 @@ export default function Showcases() {
       <Hero
         Title={'Showcase'}
         SubTitle={'Where React Shines'}
-        Text={
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        }
+        Text={'Small beginning for now. More apps are coming here.'}
         Image={<ShowcaseImage />}
       />
       <Tagline
@@ -30,6 +28,13 @@ export default function Showcases() {
         <TodoImage />
       </div>
       <ButtonInline LinkTo={'/todolist'}>Check This Out</ButtonInline>
+      <Tagline
+        Title={'More Coming Soon'}
+        Subtitle={'After a Small Beginning...'}
+        Content={
+          '“Each step you take reveals a new horizon. You have taken the first step today. Now I challenge you to take another.” Dan Poynter'
+        }
+      />
       <Footer />
     </>
   );

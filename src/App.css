@@ -94,3 +94,7 @@
   margin-right: auto;
   max-width: 1100px;
 }
+
+.text-underline {
+  text-decoration: underline;
+}

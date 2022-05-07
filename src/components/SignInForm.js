@@ -100,7 +100,10 @@ export default function SignInForm() {
           </div>
           {error && <p>{error}</p>}
         </form>
-        <Link to="/signup">Wanna Sign Up with Your Email? Go to Sign Up</Link>
+        <Link to="/signup">
+          Wanna Sign Up with Your Email? Go to{' '}
+          <span className="text-underline">Sign Up</span>
+        </Link>
       </>
     );
   }

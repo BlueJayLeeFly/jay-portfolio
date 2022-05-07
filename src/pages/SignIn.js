@@ -19,11 +19,9 @@ export default function SignIn() {
         SignIn={true}
       />
       <Tagline
-        Title={'To Do List'}
-        Subtitle={'Of React, For React, By React'}
-        Content={
-          'This website is built with React. All of sub apps in this website are also created with React. Check out my commit history on Github for progress.'
-        }
+        Title={'Thank You For Join'}
+        Subtitle={'as a Tester'}
+        Content={'Feel free to reach out to me about issues.'}
       />
       <Footer />
     </>

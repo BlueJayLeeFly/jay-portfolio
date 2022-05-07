@@ -14,9 +14,7 @@ export default function Roadmap() {
       <Hero
         Title={'Roadmap'}
         SubTitle={'The Plans to Go Further'}
-        Text={
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        }
+        Text={'This is place you can check out my future plan.'}
         Image={<RoadMapImage />}
       />
 
@@ -33,16 +31,14 @@ export default function Roadmap() {
         Title={'Team Todo List'}
         Subtitle={'Simple Todo List was a Warm Up'}
         Content={
-          '1000s products to show to your potential customers but 20 spots available. What is your choice? Display items based on location, numbers of clicks, order histories...These are what everybody uses. Customers will come back next season if your clothing lines up are boring. Give them something different.'
+          "It's an extended version of typical todo list. Team members share todo lists. All of assigned team members have to check boxes to clear the tasks. Share ideas and more."
         }
       />
       <TeamTodoImage className="team-todo-svg" />
 
       <Tagline
         Title={'More Coming Soon!'}
-        Content={
-          '1000s products to show to your potential customers but 20 spots available. What is your choice? Display items based on location, numbers of clicks, order histories...These are what everybody uses. Customers will come back next season if your clothing lines up are boring. Give them something different.'
-        }
+        Content={'I will always challenge myself to improve my skills.'}
       />
       <Footer />
     </>
