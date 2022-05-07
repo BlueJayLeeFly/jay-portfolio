@@ -91,7 +91,7 @@ export default function TodoListContainer() {
             )}
           </form>
         </div>
-        <div className={styles['todo-right']}>1</div>
+        <div className={styles['todo-right']}>Notification</div>
       </div>
     </div>
   );
